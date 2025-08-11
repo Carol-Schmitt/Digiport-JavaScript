@@ -23,3 +23,36 @@ for (let i = 0; i < 10; i++) {
         console.log("O Dunut de número " + i + " é recheado de baunilha") }
 }
 
+prompt = require("prompt-sync") ();
+
+opcao = 0;
+
+while (opcao !== 4) {
+    console.log("1 - Ver o cardápio");
+    console.log("2 - Fazer o pedido");
+    console.log("3 - Falar com um atendente");
+    console.log("4 - Sair");
+
+opcao = parseInt(prompt("Escolha uma opção: "));
+
+switch (opcao) {
+    case 1:
+        console.log("Cardapio: Hamburguer, Batata, Refrigerante");
+        break;
+    
+    case 2:
+        console.log("Pedido anotado! Estamos preparando seu lanche com carinho");
+        break;
+
+    case 3:
+        console.log("A Atendente está a caminho");
+        break;
+    
+    case 4:
+        console.log("Obrigada pela visita! Volte sempre!");
+        break;
+    default:
+        console.log("Opção invalida. Tente novamente");
+}
+
+}
